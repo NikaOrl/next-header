@@ -133,6 +133,41 @@
           }
         }
       }
+    },
+    "next-header": {
+      "root": "projects/next-header",
+      "sourceRoot": "projects/next-header/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/next-header/tsconfig.lib.json",
+            "project": "projects/next-header/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/next-header/src/test.ts",
+            "tsConfig": "projects/next-header/tsconfig.spec.json",
+            "karmaConfig": "projects/next-header/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/next-header/tsconfig.lib.json",
+              "projects/next-header/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "next-header-app"

@@ -1,0 +1,89 @@
+@import '../../../css/color-variables.scss';
+
+.next-header{
+  margin: 0;
+  min-width: 60rem;
+  display: flex;
+  justify-content: flex-start;
+  height: $next-header-height;
+  font-size: 1.4rem;
+}
+
+.next-header-env{
+  height: $next-header-height;
+  background-color: $blue-light;
+  color: $white;
+  padding: 0 1rem;
+  line-height: $next-header-height;
+  text-decoration: none;
+}
+
+.next-header-bar {
+  flex: 1;
+  height: $next-header-height;
+  background-color: $blue;
+  padding: .6rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-name{
+  font-size: 2rem;
+  font-weight: bold;
+  color: $white;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.header-description{
+  color: $white;
+  display: inline-block;
+  margin-left: .6rem;
+}
+
+.header-user-name {
+  color: $white;
+  display: inline-block;
+  line-height: 2.4rem;
+  vertical-align: middle;
+  margin: 0 0 0 1.2rem;
+  text-decoration: none;
+}
+
+.header-user-section{
+  display: flex;
+  align-items: stretch;
+}
+
+.next-header__button {
+  width: $next-header-height;
+  height: $next-header-height;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  color: $white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-appearance: none;
+  background: none;
+  background-color: transparent;
+  background-image: none;
+  border-radius: 0;
+  margin-top: -.6rem;
+  cursor: pointer;
+}
+
+.next-header__button:hover, .next-header__button:active, .next-header__button:focus {
+  color: $blue;
+  background-color: $white;
+}
+
+.next-header__button svg {
+  font-size: calc(1.4rem * 1.33);
+}
+
+.next-header__logout {
+  margin-left: 1.2rem;
+}

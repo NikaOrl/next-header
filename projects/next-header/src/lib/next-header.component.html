@@ -1,0 +1,20 @@
+<section class="next-header">
+  <section class="next-header-env" *ngIf="env">{{ env }}</section>
+  <section class="next-header-bar">
+    <div>
+      <a href="/" class="header-name" id="next-header-home">NEXT <span *ngIf="role"> - {{ role }}</span></a>
+      <div class="header-description">External Science</div>
+    </div>
+    <div class="header-user-section">
+      <ng-content select="[slot-help]">
+
+      </ng-content>
+
+      <a class="header-user-name" href="/app/preferences">{{ userName | displayUserName }}</a>
+      <button class="next-header__button next-header__logout" id="next-header-logout" (click)="logout.emit()" *ngIf="showLogout">
+        <svg icon="next-logout-icon"></svg>
+        Logout
+      </button>
+    </div>
+  </section>
+</section>
