@@ -3,14 +3,14 @@ $blue-light: #5291dd;
 $blue: #0460a9;
 $next-header-height: 36px;
 
-.next-header{
+.next-header {
   display: flex;
   height: $next-header-height;
   justify-content: flex-start;
   margin: 0;
   min-width: 60rem;
 
-  &__env{
+  &__env {
     background-color: $blue-light;
     color: $white;
     font-family: Arial;
@@ -30,25 +30,25 @@ $next-header-height: 36px;
     font-family: Arial; //
     justify-content: space-between;
     padding: 10px 6px;
+  }
 
-    &__name{
-      display: inline-block; //
-      font-size: 20px;
-      font-weight: bold;
-      text-decoration: none;
-    }
+  &__name {
+    display: inline-block; //
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+  }
 
-    &__description{
-      display: inline-block; //
-      display: inline-block;
-      font-size: 14px;
-      margin-left: .6rem; //
-      text-decoration: none;
-    }
+  &__description {
+    display: inline-block; //
+    display: inline-block;
+    font-size: 14px;
+    margin-left: .6rem; //
+    text-decoration: none;
+  }
 
-    &__user-section{
-      align-items: stretch;
-      display: flex;
-    }
+  &__user-section {
+    align-items: stretch;
+    display: flex;
   }
 }
