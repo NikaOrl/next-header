@@ -1,20 +1,17 @@
-<section class="next-header">
-  <section class="next-header-env" *ngIf="env">{{ env }}</section>
-  <section class="next-header-bar">
+<div class="next-header">
+  <div class="next-header__env" *ngIf="env">{{ env }}</div>
+  <div class="next-header__bar">
     <div>
-      <a href="/" class="header-name" id="next-header-home">NEXT <span *ngIf="role"> - {{ role }}</span></a>
-      <div class="header-description">External Science</div>
+      <a (click)="projectNameClick()" class="next-header__bar__name">{{ projectName }}</a>
+      <div class="next-header__bar__description" *ngIf="description">{{ description }}</div> <!-- External Science -->
     </div>
-    <div class="header-user-section">
+    <div class="next-header__bar__user-section">
       <ng-content select="[slot-help]">
-
       </ng-content>
-
-      <a class="header-user-name" href="/app/preferences">{{ userName | displayUserName }}</a>
-      <button class="next-header__button next-header__logout" id="next-header-logout" (click)="logout.emit()" *ngIf="showLogout">
-        <svg icon="next-logout-icon"></svg>
-        Logout
-      </button>
+      <ng-content select="[slot-user-name]">
+      </ng-content>
+      <ng-content select="[slot-logout]">
+      </ng-content>
     </div>
-  </section>
-</section>
+  </div>
+</div>

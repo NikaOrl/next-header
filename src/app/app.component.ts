@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'next-header-app';
+  env = 'Predev';
+  projectName = 'NEXT - Admin';
+  description = 'External Science';
+
+  onProjectNameClick() {
+    console.log(1);
+  }
 }
