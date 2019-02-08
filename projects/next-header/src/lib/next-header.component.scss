@@ -9,6 +9,7 @@ $next-header-height: 36px;
   justify-content: flex-start;
   margin: 0;
   min-width: 60rem;
+  /* make it 100% width while position is fixed */
 
   &__env {
     background-color: $blue-light;

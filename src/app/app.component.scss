@@ -8,7 +8,7 @@ $next-header-height: 36px;
     color: $white;
     display: inline-block;
     font-size: 14px;
-    margin: 0 1.2rem; // margin: 0 0 0 1.2rem
+    margin: 0 1.2rem;
     text-decoration: none;
     vertical-align: middle;
   }
@@ -23,22 +23,20 @@ $next-header-height: 36px;
     border-radius: 0;
     color: $white;
     cursor: pointer;
-    display: flex;
+    display: inline;
     font-size: 0;
     height: $next-header-height;
     justify-content: center;
     margin: 0;
-    margin-top: -.6rem;
+    margin-top: -0.6rem;
     padding: 0;
     width: $next-header-height;
   }
 
-  &__button:hover, &__button:active, &__button:focus {
+  &__button:hover,
+  &__button:active,
+  &__button:focus {
     background-color: $white;
     color: $blue;
   }
-
-  /* &__logout {
-    margin-left: 1.2rem;
-  } */
 }

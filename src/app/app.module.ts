@@ -6,19 +6,10 @@ import { AppComponent } from './app.component';
 
 import { NextHeaderModule } from 'next-header';
 
-// import {SvgIconModule} from '../svg-icon/svg-icon.module';
-// import {UserNameModule} from '../users/components/user-name/user-name.module';
-
 @NgModule({
+  bootstrap: [AppComponent],
   declarations: [AppComponent],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NextHeaderModule
-    // UserNameModule,
-    // SvgIconModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, AppRoutingModule, NextHeaderModule],
+  providers: []
 })
 export class AppModule {}
