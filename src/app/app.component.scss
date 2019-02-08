@@ -3,44 +3,42 @@ $blue-light: #5291dd;
 $blue: #0460a9;
 $next-header-height: 36px;
 
-.header-user-name {
-  color: $white;
-  display: inline-block;
-  line-height: 2.4rem;
-  margin: 0 0 0 1.2rem;
-  text-decoration: none;
-  vertical-align: middle;
-}
+.next-header {
+  &__user-name {
+    color: $white;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 1.2rem; // margin: 0 0 0 1.2rem
+    text-decoration: none;
+    vertical-align: middle;
+  }
 
-.next-header__button {
-  -webkit-appearance: none;
-  align-items: center;
-  background: none;
-  background-color: transparent;
-  background-image: none;
-  border: 0;
-  border-radius: 0;
-  color: $white;
-  cursor: pointer;
-  display: flex;
-  font-size: 0;
-  height: $next-header-height;
-  justify-content: center;
-  margin: 0;
-  margin-top: -.6rem;
-  padding: 0;
-  width: $next-header-height;
-}
+  &__button {
+    -webkit-appearance: none;
+    align-items: center;
+    background: none;
+    background-color: transparent;
+    background-image: none;
+    border: 0;
+    border-radius: 0;
+    color: $white;
+    cursor: pointer;
+    display: flex;
+    font-size: 0;
+    height: $next-header-height;
+    justify-content: center;
+    margin: 0;
+    margin-top: -.6rem;
+    padding: 0;
+    width: $next-header-height;
+  }
 
-.next-header__button:hover, .next-header__button:active, .next-header__button:focus {
-  background-color: $white;
-  color: $blue;
-}
+  &__button:hover, &__button:active, &__button:focus {
+    background-color: $white;
+    color: $blue;
+  }
 
-.next-header__button svg {
-  font-size: calc(1.4rem * 1.33);
-}
-
-.next-header__logout {
-  margin-left: 1.2rem;
+  /* &__logout {
+    margin-left: 1.2rem;
+  } */
 }

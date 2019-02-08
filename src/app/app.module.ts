@@ -10,17 +10,15 @@ import { NextHeaderModule } from 'next-header';
 // import {UserNameModule} from '../users/components/user-name/user-name.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NextHeaderModule,
+    NextHeaderModule
     // UserNameModule,
     // SvgIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

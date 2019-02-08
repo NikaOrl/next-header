@@ -5,18 +5,35 @@
   (projectNameClickEmitter)="onProjectNameClick()"
 >
   <div slot-help>
-    <button class="next-header__button next-header__help" id="next-header-logout" (click)="logout.emit()" *ngIf="showLogout">
-      <svg icon="next-help-icon"></svg>
-      Help
-    </button>
+    <button
+      class="next-header__button fa fa-th"
+      id="next-header-logout"
+      title="Menu"
+      (click)="onMenuClick()"
+    ></button>
+    <button
+      class="next-header__button fa fa-bell"
+      id="next-header-logout"
+      title="Notifications"
+      (click)="onBellClick()"
+    ></button>
+    <button
+      class="next-header__button fa fa-question"
+      id="next-header-logout"
+      title="Help"
+      (click)="onQuestionClick()"
+    ></button>
   </div>
   <div slot-user-name>
-    <a class="header-user-name" href="/">Vasia Petrov</a>
+    <a class="next-header__user-name" href="/">Vasia Petrov</a>
   </div>
   <div slot-logout>
-    <button class="next-header__button next-header__logout" id="next-header-logout" (click)="logout.emit()" *ngIf="showLogout">
-      <svg icon="next-logout-icon"></svg>
-      Logout
-    </button>
+    <!--class="next-header__logout"-->
+    <button
+      class="next-header__button fa fa-sign-out"
+      id="next-header-logout"
+      title="Logout"
+      (click)="onLogoutClick()"
+    ></button>
   </div>
 </next-header>

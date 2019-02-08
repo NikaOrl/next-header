@@ -1,13 +1,10 @@
-import {NgModule} from '@angular/core';
-import {NextHeaderComponent} from './next-header.component';
-import {CommonModule} from '@angular/common';
+import { NgModule } from '@angular/core';
+import { NextHeaderComponent } from './next-header.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
-  imports: [
-    CommonModule,
-  ],
+  imports: [CommonModule],
   exports: [NextHeaderComponent],
-  declarations: [NextHeaderComponent],
+  declarations: [NextHeaderComponent]
 })
-export class NextHeaderModule {
-}
+export class NextHeaderModule {}

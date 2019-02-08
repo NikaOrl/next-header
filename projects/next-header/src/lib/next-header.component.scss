@@ -14,7 +14,6 @@ $next-header-height: 36px;
     background-color: $blue-light;
     color: $white;
     font-family: Arial;
-    // height: $next-header-height;
     font-size: 14px;
     line-height: $next-header-height;
     padding: 0 1rem;
@@ -22,28 +21,27 @@ $next-header-height: 36px;
   }
 
   &__bar {
-    background-color: $blue; //
-    // height: $next-header-height; //
-    color: $white; //
+    background-color: $blue;
+    color: $white;
     display: flex;
-    flex: 1; //
-    font-family: Arial; //
+    flex: 1;
+    font-family: Arial;
     justify-content: space-between;
     padding: 10px 6px;
   }
 
-  &__name {
-    display: inline-block; //
+  &__project-name {
+    cursor: pointer;
+    display: inline-block;
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
   }
 
   &__description {
-    display: inline-block; //
     display: inline-block;
     font-size: 14px;
-    margin-left: .6rem; //
+    margin-left: 0.6rem;
     text-decoration: none;
   }
 

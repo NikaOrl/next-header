@@ -2,16 +2,17 @@
   <div class="next-header__env" *ngIf="env">{{ env }}</div>
   <div class="next-header__bar">
     <div>
-      <a (click)="projectNameClick()" class="next-header__name">{{ projectName }}</a>
-      <div class="next-header__description" *ngIf="description">{{ description }}</div>
+      <a (click)="onProjectNameClick()" class="next-header__project-name">
+        {{ projectName }}
+      </a>
+      <div class="next-header__description" *ngIf="description">
+        {{ description }}
+      </div>
     </div>
     <div class="next-header__user-section">
-      <ng-content select="[slot-help]">
-      </ng-content>
-      <ng-content select="[slot-user-name]">
-      </ng-content>
-      <ng-content select="[slot-logout]">
-      </ng-content>
+      <ng-content select="[slot-help]"></ng-content>
+      <ng-content select="[slot-user-name]"></ng-content>
+      <ng-content select="[slot-logout]"></ng-content>
     </div>
   </div>
 </div>
