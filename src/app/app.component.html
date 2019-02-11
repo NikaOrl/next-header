@@ -4,7 +4,7 @@
   [description]="description"
   (projectNameClickEmitter)="onProjectNameClick()"
 >
-  <div slot-help>
+  <div help-slot>
     <button
       class="next-header__button fa fa-th"
       id="next-header-menu"
@@ -24,10 +24,10 @@
       (click)="onQuestionClick()"
     ></button>
   </div>
-  <div slot-user-name>
+  <div user-name-slot>
     <a class="next-header__user-name" href="/">Vasia Petrov</a>
   </div>
-  <div slot-logout>
+  <div logout-slot>
     <button
       class="next-header__button fa fa-sign-out"
       id="next-header-logout"

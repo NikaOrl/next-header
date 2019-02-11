@@ -31,21 +31,54 @@ export class AppModule {
   [description]="description"
   (projectNameClickEmitter)="onProjectNameClick()"
 >
-  <div slot-help>
-    slot-help content
+  <div help-slot>
+    help-slot content
   </div>
-  <div slot-user-name>
-    slot-user-name content
+  <div user-name-slot>
+    user-name-slot content
   </div>
-  <div slot-logout>
-    slot-logout content
+  <div logout-slot>
+    logout-slot content
   </div>
 </next-header>
 ```
 
+### Header has:
+
+#### 3 inputs:
+
+- env: string;
+- projectName: string
+- description: string
+
+#### 1 output:
+
+- projectNameClickEmitter
+
+#### 3 transclusions:
+
+- help-slot
+- user-name-slot
+- logout-slot
+
 ### Tempalte for this example looks like code below
 
 ```
-
+<next-header
+  [env]="'Predev'"
+  [projectName]="'NEXT - Admin'"
+  [description]="'External Science'"
+  (projectNameClickEmitter)="onProjectNameClick()"
+>
+  <div help-slot>
+    some buttons here
+  </div>
+  <div user-name-slot>
+    user name and href="/" here
+  </div>
+  <div logout-slot>
+    some buttons here
+  </div>
+</next-header>
 
 ```
