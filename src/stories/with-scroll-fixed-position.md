@@ -1,8 +1,8 @@
-### Long page with a lot of content, fixed position and scroll
+## Long page with a lot of content, fixed position and scroll for the whole page
 
-For some pages header can have a fixed position
+For some pages the header can have a fixed position and scroll for the whole page
 
-#### Tempalte for this example looks like code below
+### The template for this example looks like the code below
 
 ```
 <style>

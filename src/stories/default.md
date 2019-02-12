@@ -22,7 +22,7 @@ export class AppModule {
 
 ```
 
-### Add murkup to the template file
+### Add markup to the template file
 
 ```
 <next-header
@@ -43,25 +43,25 @@ export class AppModule {
 </next-header>
 ```
 
-### Header has:
+## The header has:
 
-#### 3 inputs:
+### 3 inputs:
 
 - env: string;
 - projectName: string
 - description: string
 
-#### 1 output:
+### 1 output:
 
 - projectNameClickEmitter
 
-#### 3 transclusions:
+### 3 transclusions:
 
 - help-slot
 - user-name-slot
 - logout-slot
 
-### Tempalte for this example looks like code below
+### The template for this example looks like the code below
 
 ```
 <next-header

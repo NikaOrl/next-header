@@ -1,8 +1,8 @@
-### Long page with a lot of content, fixed position and scroll
+## Long page with a lot of content, fixed position and scroll for the body
 
-For some pages header can have a fixed position and scroll will be onlu for a body
+For some pages the header can have a fixed position and scroll will be only for the body
 
-#### Tempalte for this example looks like code below
+### The template for this example looks like the code below
 
 ```
 <style>
@@ -11,10 +11,6 @@ For some pages header can have a fixed position and scroll will be onlu for a bo
     display: flex;
     flex-direction: column;
     overflow: hidden;
-  }
-
-  .fixed-header {
-    display: flex;
   }
 
   .page-body {
@@ -30,7 +26,6 @@ For some pages header can have a fixed position and scroll will be onlu for a bo
     [projectName]="'NEXT - Admin'"
     [description]="'External Science'"
     (projectNameClickEmitter)="onProjectNameClick()"
-    class="fixed-header"
   >
     <div help-slot>
       some buttons here

@@ -1,8 +1,8 @@
-### Long page with a lot of content, relative position and scroll
+## Long page with a lot of content, relative position and scroll
 
-For some pages header can have a relative position
+For some pages the header can have a relative position
 
-#### Tempalte for this example looks like code below
+### The template for this example looks like the code below
 
 ```
 <div>

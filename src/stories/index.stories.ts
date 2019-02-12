@@ -35,15 +35,18 @@ const styles = `
       border-radius: 0;
       color: #fff;
       cursor: pointer;
-      display: inline;
       font-size: 18px;
       height: 36px;
       justify-content: center;
       margin: 0;
-      margin-top: -0.6rem;
+      margin-top: -10px;
       padding: 0;
       width: 36px;
     \}
+
+    .next-header__button:focus {
+      outline: 0;
+    }
 
     .next-header__button:hover,
     .next-header__button:active,
@@ -95,30 +98,30 @@ storiesOf('next-header', module)
       >
         <div help-slot>
           <button
-            class="next-header__button"
+            class="next-header__button fa fa-th"
             id="next-header-menu"
             title="Menu"
-          >▤</button>
+          ></button>
           <button
-            class="next-header__button"
+            class="next-header__button fa fa-bell"
             id="next-header-notifications"
             title="Notifications"
-          >✉</button>
+          ></button>
           <button
-            class="next-header__button"
+            class="next-header__button fa fa-question"
             id="next-header-help"
             title="Help"
-          >?</button>
+          ></button>
         </div>
         <div user-name-slot>
           <a class="next-header__user-name" href="/">Vasia Petrov</a>
         </div>
         <div logout-slot>
           <button
-            class="next-header__button"
+            class="next-header__button fa fa-sign-out"
             id="next-header-logout"
             title="Logout"
-          >✘</button>
+          ></button>
         </div>
       </next-header>
     `
@@ -138,30 +141,30 @@ storiesOf('next-header', module)
       >
         <div help-slot>
           <button
-            class="next-header__button"
+            class="next-header__button fa fa-th"
             id="next-header-menu"
             title="Menu"
-          >▤</button>
+          ></button>
           <button
-            class="next-header__button"
+            class="next-header__button fa fa-bell"
             id="next-header-notifications"
             title="Notifications"
-          >✉</button>
+          ></button>
           <button
-            class="next-header__button"
+            class="next-header__button fa fa-question"
             id="next-header-help"
             title="Help"
-          >?</button>
+          ></button>
         </div>
         <div user-name-slot>
           <a class="next-header__user-name" href="/">Vasia Petrov</a>
         </div>
         <div logout-slot>
           <button
-            class="next-header__button"
+            class="next-header__button fa fa-sign-out"
             id="next-header-logout"
             title="Logout"
-          >✘</button>
+          ></button>
         </div>
       </next-header>
     `
@@ -181,30 +184,30 @@ storiesOf('next-header', module)
       >
         <div help-slot>
           <button
-            class="next-header__button"
+            class="next-header__button fa fa-th"
             id="next-header-menu"
             title="Menu"
-          >▤</button>
+          ></button>
           <button
-            class="next-header__button"
+            class="next-header__button fa fa-bell"
             id="next-header-notifications"
             title="Notifications"
-          >✉</button>
+          ></button>
           <button
-            class="next-header__button"
+            class="next-header__button fa fa-question"
             id="next-header-help"
             title="Help"
-          >?</button>
+          ></button>
         </div>
         <div user-name-slot>
           <a class="next-header__user-name" href="/">Vasia Petrov</a>
         </div>
         <div logout-slot>
           <button
-            class="next-header__button"
+            class="next-header__button fa fa-sign-out"
             id="next-header-logout"
             title="Logout"
-          >✘</button>
+          ></button>
         </div>
       </next-header>
     `
@@ -225,27 +228,27 @@ storiesOf('next-header', module)
       >
         <div help-slot>
           <button
-            class="next-header__button"
+            class="next-header__button fa fa-th"
             id="next-header-menu"
             title="Menu"
-          >▤</button>
+          ></button>
           <button
-            class="next-header__button"
+            class="next-header__button fa fa-bell"
             id="next-header-notifications"
             title="Notifications"
-          >✉</button>
+          ></button>
           <button
-            class="next-header__button"
+            class="next-header__button fa fa-question"
             id="next-header-help"
             title="Help"
-          >?</button>
+          ></button>
         </div>
         <div logout-slot>
           <button
-            class="next-header__button"
+            class="next-header__button fa fa-sign-out"
             id="next-header-logout"
             title="Logout"
-          >✘</button>
+          ></button>
         </div>
       </next-header>
     `
@@ -269,10 +272,10 @@ storiesOf('next-header', module)
         </div>
         <div logout-slot>
           <button
-            class="next-header__button"
+            class="next-header__button fa fa-sign-out"
             id="next-header-logout"
             title="Logout"
-          >✘</button>
+          ></button>
         </div>
       </next-header>
     `
@@ -291,22 +294,22 @@ storiesOf('next-header', module)
         [projectName]="'NEXT - Admin'"
         [description]="'External Science'"
       >
-      <div help-slot>
+        <div help-slot>
           <button
-            class="next-header__button"
+            class="next-header__button fa fa-th"
             id="next-header-menu"
             title="Menu"
-          >▤</button>
+          ></button>
           <button
-            class="next-header__button"
+            class="next-header__button fa fa-bell"
             id="next-header-notifications"
             title="Notifications"
-          >✉</button>
+          ></button>
           <button
-            class="next-header__button"
+            class="next-header__button fa fa-question"
             id="next-header-help"
             title="Help"
-          >?</button>
+          ></button>
         </div>
         <div user-name-slot>
           <a class="next-header__user-name" href="/">Vasia Petrov</a>
@@ -331,30 +334,30 @@ storiesOf('next-header', module)
         >
           <div help-slot>
             <button
-              class="next-header__button"
+              class="next-header__button fa fa-th"
               id="next-header-menu"
               title="Menu"
-            >▤</button>
+            ></button>
             <button
-              class="next-header__button"
+              class="next-header__button fa fa-bell"
               id="next-header-notifications"
               title="Notifications"
-            >✉</button>
+            ></button>
             <button
-              class="next-header__button"
+              class="next-header__button fa fa-question"
               id="next-header-help"
               title="Help"
-            >?</button>
+            ></button>
           </div>
           <div user-name-slot>
             <a class="next-header__user-name" href="/">Vasia Petrov</a>
           </div>
           <div logout-slot>
             <button
-              class="next-header__button"
+              class="next-header__button fa fa-sign-out"
               id="next-header-logout"
               title="Logout"
-            >✘</button>
+            ></button>
           </div>
         </next-header>
         ${longText}
@@ -378,30 +381,30 @@ storiesOf('next-header', module)
         >
           <div help-slot>
             <button
-              class="next-header__button"
+              class="next-header__button fa fa-th"
               id="next-header-menu"
               title="Menu"
-            >▤</button>
+            ></button>
             <button
-              class="next-header__button"
+              class="next-header__button fa fa-bell"
               id="next-header-notifications"
               title="Notifications"
-            >✉</button>
+            ></button>
             <button
-              class="next-header__button"
+              class="next-header__button fa fa-question"
               id="next-header-help"
               title="Help"
-            >?</button>
+            ></button>
           </div>
           <div user-name-slot>
             <a class="next-header__user-name" href="/">Vasia Petrov</a>
           </div>
           <div logout-slot>
             <button
-              class="next-header__button"
+              class="next-header__button fa fa-sign-out"
               id="next-header-logout"
               title="Logout"
-            >✘</button>
+            ></button>
           </div>
         </next-header>
         <div class="page-body">
@@ -428,30 +431,30 @@ storiesOf('next-header', module)
         >
           <div help-slot>
             <button
-              class="next-header__button"
+              class="next-header__button fa fa-th"
               id="next-header-menu"
               title="Menu"
-            >▤</button>
+            ></button>
             <button
-              class="next-header__button"
+              class="next-header__button fa fa-bell"
               id="next-header-notifications"
               title="Notifications"
-            >✉</button>
+            ></button>
             <button
-              class="next-header__button"
+              class="next-header__button fa fa-question"
               id="next-header-help"
               title="Help"
-            >?</button>
+            ></button>
           </div>
           <div user-name-slot>
             <a class="next-header__user-name" href="/">Vasia Petrov</a>
           </div>
           <div logout-slot>
             <button
-              class="next-header__button"
+              class="next-header__button fa fa-sign-out"
               id="next-header-logout"
               title="Logout"
-            >✘</button>
+            ></button>
           </div>
         </next-header>
         <div class="page-body-for-fixed-header">

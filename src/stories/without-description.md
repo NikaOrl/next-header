@@ -1,16 +1,18 @@
-### Header can contain no environment, description, projectNameClickEmitter and no conponents in the slot
+## The header can contain no description
 
-For example here you can see it without environment, description and user-name-slot
-
-#### Tempalte for this example looks like code below
+### The template for this example looks like the code below
 
 ```
 <next-header
+  [env]="'Predev'"
   [projectName]="'NEXT - Admin'"
   (projectNameClickEmitter)="onProjectNameClick()"
 >
   <div help-slot>
     some buttons here
+  </div>
+  <div user-name-slot>
+    user name and href="/" here
   </div>
   <div logout-slot>
     some buttons here

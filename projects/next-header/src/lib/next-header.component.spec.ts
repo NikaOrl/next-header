@@ -8,15 +8,27 @@ import { Component } from '@angular/core';
 
 @Component({
   template: `
-    <next-header [projectName]="projectName">
-      <div help-slot></div>
-      <div user-name-slot></div>
-      <div logout-slot></div>
+    <next-header
+      [env]="env"
+      [projectName]="projectName"
+      [description]="description"
+    >
+      <div help-slot>
+        <div class="help-slot-test-element"></div>
+      </div>
+      <div user-name-slot>
+        <div class="user-name-slot-test-element"></div>
+      </div>
+      <div logout-slot>
+        <div class="logout-slot-test-element"></div>
+      </div>
     </next-header>
   `
 })
 class HostComponent {
-  public projectName = 'projectName_test';
+  env = 'test_env';
+  projectName = 'test_projectName';
+  description = 'test_description';
 }
 
 describe('NextHeaderComponent', () => {
@@ -42,19 +54,19 @@ describe('NextHeaderComponent', () => {
   });
 
   it('should show env', () => {
-    component.env = 'test_env';
-    fixture.detectChanges();
-    fixture.whenStable().then(() => {
-      const de = fixture.debugElement.query(By.css('.next-header__env'));
+    hostFixture.detectChanges();
+    hostFixture.whenStable().then(() => {
+      const de = hostFixture.debugElement.query(
+        By.css('.next-header__env')
+      );
       expect(de.nativeElement.textContent).toContain('test_env');
     });
   });
 
   it('should show projectName', () => {
-    component.projectName = 'test_projectName';
-    fixture.detectChanges();
-    fixture.whenStable().then(() => {
-      const de = fixture.debugElement.query(
+    hostFixture.detectChanges();
+    hostFixture.whenStable().then(() => {
+      const de = hostFixture.debugElement.query(
         By.css('.next-header__project-name')
       );
       expect(de.nativeElement.textContent).toContain('test_projectName');
@@ -62,10 +74,9 @@ describe('NextHeaderComponent', () => {
   });
 
   it('should show description', () => {
-    component.projectName = 'test_description';
-    fixture.detectChanges();
-    fixture.whenStable().then(() => {
-      const de = fixture.debugElement.query(
+    hostFixture.detectChanges();
+    hostFixture.whenStable().then(() => {
+      const de = hostFixture.debugElement.query(
         By.css('.next-header__description')
       );
       expect(de.nativeElement.textContent).toContain('test_description');
@@ -75,10 +86,10 @@ describe('NextHeaderComponent', () => {
   it('should emit when the projectName is clicked', () => {
     spyOn(component.projectNameClickEmitter, 'emit');
     fixture.whenStable().then(() => {
-      const a = fixture.debugElement.nativeElement.query(
+      const de = fixture.debugElement.query(
         By.css('.next-header__project-name')
       );
-      a.click();
+      de.nativeElement.click();
       expect(component.projectNameClickEmitter.emit).toHaveBeenCalled();
     });
   });
@@ -89,7 +100,7 @@ describe('NextHeaderComponent', () => {
       const de = hostFixture.debugElement.query(
         By.css('.next-header__user-section')
       );
-      expect(de.nativeElement.innerHTML).toContain('help-slot');
+      expect(de.nativeElement.innerHTML).toContain('help-slot-test-element');
     });
   });
 
@@ -99,7 +110,7 @@ describe('NextHeaderComponent', () => {
       const de = hostFixture.debugElement.query(
         By.css('.next-header__user-section')
       );
-      expect(de.nativeElement.innerHTML).toContain('user-name-slot');
+      expect(de.nativeElement.innerHTML).toContain('user-name-slot-test-element');
     });
   });
 
@@ -109,7 +120,7 @@ describe('NextHeaderComponent', () => {
       const de = hostFixture.debugElement.query(
         By.css('.next-header__user-section')
       );
-      expect(de.nativeElement.innerHTML).toContain('logout-slot');
+      expect(de.nativeElement.innerHTML).toContain('logout-slot-test-element');
     });
   });
 });

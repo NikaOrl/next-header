@@ -1,15 +1,14 @@
 <div class="next-header">
-  <div class="next-header__env" *ngIf="env">{{ env }}</div>
+  <div class="next-header__env" [hidden]="!env">{{ env }}</div>
   <div class="next-header__bar">
     <div>
-      <div
+      <button
         class="next-header__project-name"
         (click)="onProjectNameClick()"
-        *ngIf="projectName"
       >
         {{ projectName }}
-      </div>
-      <div class="next-header__description" *ngIf="description">
+      </button>
+      <div class="next-header__description">
         {{ description }}
       </div>
     </div>

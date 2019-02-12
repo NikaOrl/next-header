@@ -23,14 +23,17 @@ $next-header-height: 36px;
     border-radius: 0;
     color: $white;
     cursor: pointer;
-    display: inline;
     font-size: 0;
     height: $next-header-height;
     justify-content: center;
     margin: 0;
-    margin-top: -0.6rem;
+    margin-top: -10px;
     padding: 0;
     width: $next-header-height;
+
+    &:focus {
+      outline: 0;
+    }
   }
 
   &__button:hover,

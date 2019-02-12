@@ -16,7 +16,7 @@ $next-header-height: 36px;
     font-family: Arial;
     font-size: 14px;
     line-height: $next-header-height;
-    padding: 0 1rem;
+    padding: 0 16px;
     text-decoration: none;
   }
 
@@ -31,17 +31,27 @@ $next-header-height: 36px;
   }
 
   &__project-name {
+    background: none;
+    background-color: transparent;
+    background-image: none;
+    border: 0;
+    border-radius: 0;
+    color: #fff;
     cursor: pointer;
     display: inline-block;
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
+
+    &:focus {
+      outline: 0;
+    }
   }
 
   &__description {
     display: inline-block;
     font-size: 14px;
-    margin-left: 0.6rem;
+    margin-left: 10px;
     text-decoration: none;
   }
 

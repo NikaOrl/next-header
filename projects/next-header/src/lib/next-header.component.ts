@@ -16,7 +16,7 @@ export class NextHeaderComponent {
   @Input() env: string;
   @Input() projectName: string;
   @Input() description: string;
-  @Output() projectNameClickEmitter = new EventEmitter();
+  @Output() projectNameClickEmitter = new EventEmitter<void>();
 
   onProjectNameClick() {
     this.projectNameClickEmitter.emit();
