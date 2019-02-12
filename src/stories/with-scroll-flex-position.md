@@ -1,24 +1,30 @@
 ### Long page with a lot of content, fixed position and scroll
 
-For some pages header can have a fixed position
+For some pages header can have a fixed position and scroll will be onlu for a body
 
 #### Tempalte for this example looks like code below
 
 ```
 <style>
+  .container {
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
   .fixed-header {
-    position: fixed;
-    left: 0%;
-    top: 0%;
-    right: 0%;
+    display: flex;
   }
 
   .page-body {
-    margin-top: 36px;
+    overflow-y: auto;
+    flex: 1;
+    position: relative;
   }
 </style>
 
-<div>
+<div class="container">
   <next-header
     [env]="'Predev'"
     [projectName]="'NEXT - Admin'"

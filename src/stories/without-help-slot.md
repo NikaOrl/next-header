@@ -1,6 +1,6 @@
 ### Header can contain no environment, description, projectNameClickEmitter and no conponents in the slot
 
-For example here you can see it without help-slot, logout-slot and projectNameClickEmitter
+For example here you can see it without help-slot
 
 #### Tempalte for this example looks like code below
 
@@ -12,6 +12,9 @@ For example here you can see it without help-slot, logout-slot and projectNameCl
 >
   <div user-name-slot>
     user name and href="/" here
+  </div>
+  <div logout-slot>
+    some buttons here
   </div>
 </next-header>
 ```
